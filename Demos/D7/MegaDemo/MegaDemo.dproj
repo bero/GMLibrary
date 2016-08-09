@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{a23e8d0c-1ee0-431a-9beb-3deb695d6eeb}</ProjectGuid>
+    <MainSource>MegaDemo.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>MegaDemo.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_UnitSearchPath>C:\Attracs\gmLibrary\src;C:\Attracs\gmLibrary\src\VCL</DCC_UnitSearchPath>
+    <DCC_ResourcePath>C:\Attracs\gmLibrary\src;C:\Attracs\gmLibrary\src\VCL</DCC_ResourcePath>
+    <DCC_ObjPath>C:\Attracs\gmLibrary\src;C:\Attracs\gmLibrary\src\VCL</DCC_ObjPath>
+    <DCC_IncludePath>C:\Attracs\gmLibrary\src;C:\Attracs\gmLibrary\src\VCL</DCC_IncludePath>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject> <Delphi.Personality>   <Parameters>
+      <Parameters Name="UseLauncher">False</Parameters>
+      <Parameters Name="LoadAllSymbols">True</Parameters>
+      <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+    </Parameters>
+    <Language>
+      <Language Name="RootDir">C:\Archivos de programa\Borland\Delphi7\Bin\</Language>
+    </Language>
+    <VersionInfo>
+      <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+      <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+      <VersionInfo Name="MajorVer">1</VersionInfo>
+      <VersionInfo Name="MinorVer">0</VersionInfo>
+      <VersionInfo Name="Release">0</VersionInfo>
+      <VersionInfo Name="Build">0</VersionInfo>
+      <VersionInfo Name="Debug">False</VersionInfo>
+      <VersionInfo Name="PreRelease">False</VersionInfo>
+      <VersionInfo Name="Special">False</VersionInfo>
+      <VersionInfo Name="Private">False</VersionInfo>
+      <VersionInfo Name="DLL">False</VersionInfo>
+      <VersionInfo Name="Locale">1033</VersionInfo>
+      <VersionInfo Name="CodePage">1252</VersionInfo>
+    </VersionInfo>
+    <VersionInfoKeys>
+      <VersionInfoKeys Name="CompanyName"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileDescription"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="InternalName"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+      <VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductName"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="Comments"></VersionInfoKeys>
+    </VersionInfoKeys>
+    <Source>
+      <Source Name="MainSource">MegaDemo.dpr</Source>
+    </Source>
+    <Excluded_Packages>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <Excluded_Packages Name="C:\Attracs\Attracs-Online\Components\Bpl\dclindy100.bpl">Internet Direct Version 9 (Indy) Property and Component Editors</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dcloffice2k100.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dclofficexp100.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+    </Excluded_Packages>
+  </Delphi.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <ItemGroup>
+    <DelphiCompile Include="MegaDemo.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="UCirclesFrm.pas">
+      <Form>CirclesFrm</Form>
+    </DCCReference>
+    <DCCReference Include="UDirectionsFrm.pas">
+      <Form>DirectionsFrm</Form>
+    </DCCReference>
+    <DCCReference Include="UGeoCodeFrm.pas">
+      <Form>GeoCodeFrm</Form>
+    </DCCReference>
+    <DCCReference Include="UGroundOverlayFrm.pas">
+      <Form>GroundOverlayFrm</Form>
+    </DCCReference>
+    <DCCReference Include="UMainFrm.pas">
+      <Form>MainFrm</Form>
+    </DCCReference>
+    <DCCReference Include="UMapFrm.pas">
+      <Form>MapFrm</Form>
+    </DCCReference>
+    <DCCReference Include="UMarkersFrm.pas">
+      <Form>MarkersFrm</Form>
+    </DCCReference>
+    <DCCReference Include="UPolygonFrm.pas">
+      <Form>PolygonFrm</Form>
+    </DCCReference>
+    <DCCReference Include="UPolylinesFrm.pas">
+      <Form>PolylinesFrm</Form>
+    </DCCReference>
+    <DCCReference Include="URectanglesFrm.pas">
+      <Form>RectanglesFrm</Form>
+    </DCCReference>
+    <DCCReference Include="UWaypointFrm.pas">
+      <Form>WaypointFrm</Form>
+    </DCCReference>
+  </ItemGroup>
+</Project>
